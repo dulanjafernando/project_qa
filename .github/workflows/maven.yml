@@ -1,5 +1,5 @@
 name: Java CI with Maven and Selenium
-//d
+
 on:
   push:
     branches: [ "master" ]
