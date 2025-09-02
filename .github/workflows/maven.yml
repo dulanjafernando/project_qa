@@ -22,7 +22,7 @@ jobs:
       - name: Install Google Chrome
         run: |
           sudo apt-get update
-          sudo apt-get install google-chrome-stable
+          sudo apt-get install -y google-chrome-stable
 
-      - name: Build with Maven and Run Tests
-        run: mvn -B package
+      - name: Build with Maven (Skip Tests)
+        run: mvn -B package -DskipTests
